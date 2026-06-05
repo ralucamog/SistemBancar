@@ -5,14 +5,13 @@ Acesta este un proiect de tip consolă (CLI) dezvoltat în Java, creat pentru di
 
 Proiectul demonstrează stăpânirea conceptelor fundamentale de **Programare Orientată pe Obiecte (OOP)**, **Structuri de Date (Collections Framework)**, **I/O (Gestiunea Fișierelor)** și **Persistența Datelor (JDBC & PostgreSQL)**.
 
----
 
 ## Tehnologii Utilizate
 * **Limbaj:** Java (JDK 8+)
 * **Bază de Date:** PostgreSQL
 * **Conectivitate:** JDBC (Java Database Connectivity)
 
----
+
 
 ## Cerințe
 
@@ -37,7 +36,6 @@ Aplicația a fost construită pentru a bifa:
    * Jurnalizarea fiecărei acțiuni din sistem într-un fișier `audit.csv`.
    * Folosirea `FileWriter` în mod *append* (prin blocuri *try-with-resources*) pentru a înregistra structura: `denumire_actiune, data_si_ora`.
 
----
 
 ## Arhitectura Aplicației
 
@@ -46,11 +44,9 @@ Proiectul respectă **Principiul Responsabilității Unice (SRP)** și este stru
 * **Servicii (Business & Persistence Layer):** `ServiciuBancar` (gestionează logica SQL/CRUD), `ServiciuAudit` (gestionează scrierea în fișiere CSV).
 * **Controler / UI:** `Main` (gestionează exclusiv interacțiunea cu utilizatorul și meniul text).
 
----
 
 ## Structura Proiectului
 
-```text
 ProiectBancaraPAO/
  |-- src/
  |   |-- ConfigurareBazaDate.java  # Configurarea conexiunii JDBC (Singleton)
