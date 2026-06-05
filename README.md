@@ -46,7 +46,7 @@ Proiectul respectă **Principiul Responsabilității Unice (SRP)** și este stru
 
 
 ## Structura Proiectului
-
+```text
 ProiectBancaraPAO/
  |-- src/
  |   |-- ConfigurareBazaDate.java  # Configurarea conexiunii JDBC (Singleton)
